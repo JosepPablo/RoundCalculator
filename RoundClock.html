@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <title>Calculadora</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet" type="text/css">
+    <style>
+        body {
+            font-family: 'Roboto', sans-serif;
+            display: flex;
+        }
+        
+        p {
+            display: flex;
+            flex-flow: row wrap;
+        }
+        
+        #container {
+            
+            border-radius: 24px 24px 24px 24px;
+            border: 1px solid black;
+            background: linear-gradient(to bottom, rgba(245, 214, 177, 1) 0%, rgba(240, 163, 74, 1) 48%, rgba(245, 214, 177, 1) 100%);
+            margin: 0;
+            padding: 10px;
+            width: 145px;
+        }
+        
+        #num {
+            background-color: #E9E9E9;
+            font-weight: bold;
+            border-radius: 24px 24px 24px 24px;
+            width: 140px;
+        }
+    </style>
+    <script type="text/javascript">
+        var num, acc = 0,
+            op = "";
+
+        function mas() {
+            acc = num.value;
+            op = "+";
+        }
+
+        function menos() {
+            acc = num.value;
+            op = "-";
+        }
+
+        function por() {
+            acc = num.value;
+            op = "*";
+        }
+
+        function div() {
+            acc = num.value;
+            op = "/";
+        }
+
+        function xy() {
+            acc = num.value;
+            op = "xy";
+        }
+
+        function qua() {
+            acc = num.value;
+            op = "qua";
+            calcular();
+        }
+
+        function inv() {
+            acc = num.value;
+            op = "inv";
+            calcular();
+        }
+
+        function sqr() {
+            acc = num.value;
+            op = "sqr";
+            calcular();
+        }
+
+        function Ent() {
+            acc = num.value;
+            op = "Ent";
+            calcular();
+        }
+
+        function calcular() {
+            if (op === "+") {
+                num.value = (+acc + +num.value);
+            }
+            if (op === "-") {
+                num.value = (+acc - +num.value);
+            }
+            if (op === "*") {
+                num.value = (+acc * +num.value);
+            }
+            if (op === "/") {
+                num.value = (+acc / +num.value);
+            }
+            if (op === "xy") {
+                num.value = Math.pow(+acc, +num.value);
+            }
+            if (op === "qua") {
+                num.value = Math.pow(+acc, 2);
+            }
+            if (op === "inv") {
+                num.value = (1 / +num.value);
+            }
+            if (op === "sqr") {
+                num.value = Math.pow(+acc, (0.5));
+            }
+            if (op === "Ent") {
+                if (+acc >= 0) {
+                    num.value = Math.floor(+acc);
+                } else {
+                    num.value = Math.ceil(+acc);
+                }
+
+            }
+        }
+
+        function inic() {
+            num = document.getElementById("num");
+        }
+
+        function vaciar() {
+            num.value = "";
+        }
+    </script>
+</head>
+
+<body onload="inic()">
+    <div id="container">
+        Calculadora:
+        <p id="cap">
+
+            <input type="text" size="12" id="num" onclick="vaciar()">
+        </p>
+        <p id="dosop">
+            <button onclick="mas()">+</button>
+            <button onclick="menos()">-</button>
+            <button onclick="por()">*</button>
+            <button onclick="div()">/</button>
+            <button onclick="xy()">x^y</button>
+            <button onclick="calcular()">=</button>
+        </p>
+        <p id="unop">
+            <button onclick="qua()">x^2</button>
+            <button onclick="inv()">1/x</button>
+            <button onclick="sqr()">√</button>
+            <button onclick="Ent()">Entero</button>
+        </p>
+    </div>
+</body>
+
+</html>
