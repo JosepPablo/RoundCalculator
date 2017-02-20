@@ -107,25 +107,27 @@
 
 <body onload="inic()">
     <div id="container">
-        Calculadora:
-        <p id="cap">
 
-            <input type="text" size="12" id="num" onclick="vaciar()">
-        </p>
-        <p id="dosop">
-            <button onclick="mas()">+</button>
-            <button onclick="menos()">-</button>
-            <button onclick="por()">*</button>
-            <button onclick="div()">/</button>
-            <button onclick="xy()">x^y</button>
-            <button onclick="calcular()">=</button>
-        </p>
-        <p id="unop">
-            <button onclick="qua()">x^2</button>
-            <button onclick="inv()">1/x</button>
-            <button onclick="sqr()">√</button>
-            <button onclick="Ent()">Entero</button>
-        </p>
+        <div id="sphere">
+            <div class="interior" id="cap">
+
+                <input type="text" size="12" id="num" onclick="vaciar()">
+            </div>
+            <div class="interior" id="dosop">
+                <button onclick="mas()">+</button>
+                <button onclick="menos()">-</button>
+                <button onclick="por()">*</button>
+                <button onclick="div()">/</button>
+                <button onclick="xy()">x^y</button>
+                <button onclick="calcular()">=</button>
+            </div>
+            <div class="interior" id="unop">
+                <button onclick="qua()">x^2</button>
+                <button onclick="inv()">1/x</button>
+                <button onclick="sqr()">√</button>
+                <button onclick="Ent()">Entero</button>
+            </div>
+        </div>
     </div>
 </body>
 
