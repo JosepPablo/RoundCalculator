@@ -109,23 +109,33 @@
     <div id="container">
 
         <div id="sphere">
-            <div class="interior" id="cap">
+            <div class="interior" id="num1">
+                <button class="button button3" onclick="mas()">/</button>
+                <button class="button button3" onclick="menos()">9</button>
+                <button class="button button3" onclick="menos()">*</button>
 
-                <input type="text" size="12" id="num" onclick="vaciar()">
             </div>
-            <div class="interior" id="dosop">
-                <button onclick="mas()">+</button>
-                <button onclick="menos()">-</button>
-                <button onclick="por()">*</button>
-                <button onclick="div()">/</button>
-                <button onclick="xy()">x^y</button>
-                <button onclick="calcular()">=</button>
+            <div class="interior" id="num2">
+                <button class="button" onclick="mas()">5</button>
+                <button class="button" onclick="menos()">6</button>
+                <button class="button" onclick="por()">7</button>
+                <button class="button" onclick="div()">8</button>
+
             </div>
-            <div class="interior" id="unop">
-                <button onclick="qua()">x^2</button>
-                <button onclick="inv()">1/x</button>
-                <button onclick="sqr()">√</button>
-                <button onclick="Ent()">Entero</button>
+            <div class="interior" id="result">
+
+                <input type="text" size="10" id="res" onclick="vaciar()">
+            </div>
+            <div class="interior" id="num3">
+                <button class="button" onclick="por()">1</button>
+                <button class="button" onclick="div()">2</button>
+                <button class="button" onclick="xy()">3</button>
+                <button class="button" onclick="calcular()">4</button>
+            </div>
+            <div class="interior" id="num4">
+                <button class="button button3" onclick="qua()">-</button>
+                <button class="button button3" onclick="inv()">0</button>
+                <button class="button button3" onclick="sqr()">+</button>
             </div>
         </div>
     </div>
