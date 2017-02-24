@@ -100,5 +100,9 @@
  
  .bmenu {
      width: 100%;
-     background-image: url("\images\drawable-hdpi\ic_menu_white_24dp.png");
+     background-image: url("images/ic_menu_white_24dp.png");
+     background-repeat: no-repeat;
+     background-position: center;
+     width: 55px;
+     height: 55px;
  }
