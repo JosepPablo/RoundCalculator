@@ -8,11 +8,57 @@
     <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet" type="text/css">
     <link rel="stylesheet" type="text/css" href="roundcss.css" />
     <script type="text/javascript">
-        var num, acc = 0,
+        var res, acc = 0,
             op = "";
 
+        function nueve() {
+            num.value = num.value + "9";
+        }
+
+        function ocho() {
+            num.value = num.value + "8";
+        }
+
+        function siete() {
+            num.value = num.value + "7";
+        }
+
+        function seis() {
+            num.value = num.value + "6";
+        }
+
+        function cinco() {
+            num.value = num.value + "5";
+        }
+
+        function cuatro() {
+            num.value = num.value + "4";
+        }
+
+        function tres() {
+            num.value = num.value + "3";
+        }
+
+        function dos() {
+            num.value = num.value + "2";
+        }
+
+        function uno() {
+            num.value = num.value + "1";
+        }
+
+        function cero() {
+            num.value = num.value + "0";
+        }
+
+        function coma() {
+            num.value = num.value + ",";
+        }
+
         function mas() {
+            calcular();
             acc = num.value;
+            num.value = "";
             op = "+";
         }
 
@@ -93,14 +139,19 @@
                 }
 
             }
+            acc = 0;
         }
 
         function inic() {
-            num = document.getElementById("num");
+            num = document.getElementById("res");
         }
 
         function vaciar() {
             num.value = "";
+        }
+
+        function del() {
+            num.value = num.value.slice(0, -1);
         }
     </script>
 </head>
@@ -110,19 +161,20 @@
 
         <div id="sphere">
             <div class="interior" id="num0">
-                <button class="button bmenu" onclick="menu">=</button>
+                <button class="button bmenu" onclick="vaciar()"></button>
+                <button class="button back" onclick="del()"></button>
             </div>
             <div class="interior" id="num1">
                 <button class="button button3" onclick="mas()">/</button>
-                <button class="button button3" onclick="menos()">9</button>
+                <button class="button button3" onclick="nueve()">9</button>
                 <button class="button button3" onclick="menos()">*</button>
 
             </div>
             <div class="interior" id="num2">
-                <button class="button" onclick="mas()">5</button>
-                <button class="button" onclick="menos()">6</button>
-                <button class="button" onclick="por()">7</button>
-                <button class="button" onclick="div()">8</button>
+                <button class="button" onclick="cinco()">5</button>
+                <button class="button" onclick="seis()">6</button>
+                <button class="button" onclick="siete()">7</button>
+                <button class="button" onclick="ocho()">8</button>
 
             </div>
             <div class="interior" id="result">
@@ -130,20 +182,20 @@
                 <input type="text" maxlength="12" id="res" onclick="vaciar()">
             </div>
             <div class="interior" id="num3">
-                <button class="button" onclick="por()">1</button>
-                <button class="button" onclick="div()">2</button>
-                <button class="button" onclick="xy()">3</button>
-                <button class="button" onclick="calcular()">4</button>
+                <button class="button" onclick="uno()">1</button>
+                <button class="button" onclick="dos()">2</button>
+                <button class="button" onclick="tres()">3</button>
+                <button class="button" onclick="cuatro()">4</button>
             </div>
             <div class="interior" id="num4">
                 <button class="button button3" onclick="qua()">-</button>
-                <button class="button button3" onclick="inv()">0</button>
-                <button class="button button3" onclick="sqr()">+</button>
+                <button class="button button3" onclick="cero()">0</button>
+                <button class="button button3" onclick="mas()">+</button>
             </div>
             <div class="interior" id="num5">
-                <button class="button button3" onclick="dec">,</button>
-                <button class="button button3" onclick="igual">=</button>
-                <button class="button button3" onclick="advc">∿</button>
+                <button class="button button3s" onclick="coma()">·</button>
+                <button class="button button3s" onclick="calcular()">=</button>
+                <button class="button button3s" onclick="advc">∿</button>
             </div>
         </div>
     </div>
