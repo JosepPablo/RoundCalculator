@@ -6,12 +6,15 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet" type="text/css">
-    <link rel="stylesheet" type="text/css" href="roundcss.css" />
+    <link rel="stylesheet" type="text/css" href="roundcss.css" id="linkestilo" />
+    <script src="jquery/jquery-1.11.2.min.js"></script>
+
     <script type="text/javascript">
         var res, acc = 0,
             op = "",
             limp = false,
-            maxl = 12;
+            maxl = 12
+        skin = "roundcss.css";
 
         function numero(text) {
             if (limp === true) {
@@ -251,6 +254,20 @@
         function menu() {
             window.alert("Menu settings to develop");
         }
+
+        function cestilo() {
+            if (skin === "roundcss.css") {
+                skin = "white.css";
+            } else {
+                skin = "roundcss.css";
+            }
+            $("#linkestilo").attr("href", skin)
+        }
+        $(".enlaceestilo").click(function(e) {
+            e.preventDefault(); /*El e.preventDefault() es para decirle al evento click que no se realice el comportamiento predeterminado de este enlace, es decir, que el navegador no se vaya a la ruta marcada en el href del enlace.*/
+            var rutaEstilo = $(this).attr("href")
+            $("#linkestilo").attr("href", rutaEstilo)
+        })
     </script>
 </head>
 
@@ -260,7 +277,7 @@
         <div id="sphere">
             <div class="interior" id="num0">
                 <button class="button button3s" onclick="limpia()">c</button>
-                <button class="button bmenu" onclick="menu()"></button>
+                <button class="button bmenu" onclick="cestilo()"></button>
                 <button class="button back" onclick="del()"></button>
             </div>
             <div class="interior" id="num1">
@@ -294,7 +311,7 @@
             <div class="interior" id="num5">
                 <button class="button button3s" onclick="numero('.')">·</button>
                 <button class="button button3s" onclick="calcular()">=</button>
-                <button class="button button3s" onclick="advc()">∿</button>
+                <button class="button button3s" id="cienti" onclick="advc()">∿</button>
             </div>
         </div>
     </div>
