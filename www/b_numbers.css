@@ -6,9 +6,10 @@ body {
     font-family: 'Roboto', sans-serif;
     width: 400px;
     height: 400px;
-    background: radial-gradient(ellipse at center, rgba(252, 255, 244, 1) 0%, rgba(223, 229, 215, 1) 55%, rgba(179, 190, 173, 1) 100%);
+    background: radial-gradient(ellipse at center, rgba(2, 2, 2, 1) 0%, rgba(69, 72, 77, 1) 100%, rgba(69, 72, 77, 1) 100%);
     margin: 0;
     padding: 0px;
+    color: papayawhip;
     /*display: flex;*/
 }
 
@@ -24,16 +25,16 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#fcfff4+0,dfe5d7+40,b3bead+100 */
-    background: rgb(252, 255, 244);
+    /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#000000+10,5e6268+100 */
+    background: rgb(0, 0, 0);
     /* Old browsers */
-    background: -moz-radial-gradient(center, ellipse cover, rgba(252, 255, 244, 1) 0%, rgba(223, 229, 215, 1) 40%, rgba(179, 190, 173, 1) 100%);
+    background: -moz-radial-gradient(center, ellipse cover, rgba(0, 0, 0, 1) 10%, rgba(94, 98, 104, 1) 100%);
     /* FF3.6-15 */
-    background: -webkit-radial-gradient(center, ellipse cover, rgba(252, 255, 244, 1) 0%, rgba(223, 229, 215, 1) 40%, rgba(179, 190, 173, 1) 100%);
+    background: -webkit-radial-gradient(center, ellipse cover, rgba(0, 0, 0, 1) 10%, rgba(94, 98, 104, 1) 100%);
     /* Chrome10-25,Safari5.1-6 */
-    background: radial-gradient(ellipse at center, rgba(252, 255, 244, 1) 0%, rgba(223, 229, 215, 1) 40%, rgba(179, 190, 173, 1) 100%);
+    background: radial-gradient(ellipse at center, rgba(0, 0, 0, 1) 10%, rgba(94, 98, 104, 1) 100%);
     /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
-    filter: progid: DXImageTransform.Microsoft.gradient( startColorstr='#fcfff4', endColorstr='#b3bead', GradientType=1);
+    filter: progid: DXImageTransform.Microsoft.gradient( startColorstr='#000000', endColorstr='#5e6268', GradientType=1);
     /* IE6-9 fallback on horizontal gradient */
 }
 
@@ -72,25 +73,33 @@ body {
     width: 282px;
     padding: 0px;
     font-size: 2.5em;
-    color: DarkSlateGray;
     background: transparent;
     font-family: 'Roboto', sans-serif;
     text-align: center;
 }
 
 #cienti {
-    color: white;
+    /*color: white;*/
 }
 
 .button {
     font-size: 3em;
     width: 67px;
-    color: DarkSlateGray;
     background: transparent;
     border-width: 0px;
     padding: 0px;
     width: 25%;
     outline: none;
+    color: papayawhip;
+    /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#000000+49,595959+77,595959+77,919191+90,45484d+100&1+39,0+68,0+82,0+100 */
+    background: -moz-radial-gradient(center, ellipse cover, rgba(0, 0, 0, 1) 39%, rgba(0, 0, 0, 0.66) 49%, rgba(60, 60, 60, 0) 68%, rgba(89, 89, 89, 0) 77%, rgba(111, 111, 111, 0) 82%, rgba(145, 145, 145, 0) 90%, rgba(69, 72, 77, 0) 100%);
+    /* FF3.6-15 */
+    background: -webkit-radial-gradient(center, ellipse cover, rgba(0, 0, 0, 1) 39%, rgba(0, 0, 0, 0.66) 49%, rgba(60, 60, 60, 0) 68%, rgba(89, 89, 89, 0) 77%, rgba(111, 111, 111, 0) 82%, rgba(145, 145, 145, 0) 90%, rgba(69, 72, 77, 0) 100%);
+    /* Chrome10-25,Safari5.1-6 */
+    background: radial-gradient(ellipse at center, rgba(0, 0, 0, 1) 39%, rgba(0, 0, 0, 0.66) 49%, rgba(60, 60, 60, 0) 68%, rgba(89, 89, 89, 0) 77%, rgba(111, 111, 111, 0) 82%, rgba(145, 145, 145, 0) 90%, rgba(69, 72, 77, 0) 100%);
+    /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    filter: progid: DXImageTransform.Microsoft.gradient( startColorstr='#000000', endColorstr='#0045484d', GradientType=1);
+    /* IE6-9 fallback on horizontal gradient */
 }
 
 .button3 {

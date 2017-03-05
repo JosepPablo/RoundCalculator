@@ -3,7 +3,7 @@
   5 separaciones en el cuadrado:56 */
     
     body {
-        font-family: 'Roboto', sans-serif;
+        font-family: Impact, Haettenschweiler, "Times New Roman", Times, serif;
         width: 400px;
         height: 400px;
         background: radial-gradient(ellipse at center, rgba(2, 2, 2, 1) 0%, rgba(69, 72, 77, 1) 100%, rgba(69, 72, 77, 1) 100%);
@@ -91,7 +91,7 @@
         padding: 0px;
         width: 25%;
         outline: none;
-        font-family: 'Roboto', sans-serif;
+        font-family: 'Play', Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
     }
     
     .button3 {

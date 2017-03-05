@@ -5,7 +5,8 @@
     <title>Calculadora</title>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet" type="text/css">
+    <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Play" rel="stylesheet">
     <link rel="stylesheet" type="text/css" href="roundcss.css" id="linkestilo" />
     <script src="jquery/jquery-1.11.2.min.js"></script>
 
@@ -13,8 +14,13 @@
         var res, acc = 0,
             op = "",
             limp = false,
-            maxl = 12
-        skin = "roundcss.css";
+            maxl = 12,
+            skin = ["roundcss.css",
+                "white.css",
+                "b_numbers.css",
+                "elefont.css"
+            ],
+            skinpointer = 0;
 
         function numero(text) {
             if (limp === true) {
@@ -256,12 +262,12 @@
         }
 
         function cestilo() {
-            if (skin === "roundcss.css") {
-                skin = "white.css";
+            if (skinpointer < skin.length - 1) {
+                skinpointer = skinpointer + 1;
             } else {
-                skin = "roundcss.css";
+                skinpointer = 0;
             }
-            $("#linkestilo").attr("href", skin)
+            $("#linkestilo").attr("href", skin[skinpointer])
         }
         $(".enlaceestilo").click(function(e) {
             e.preventDefault(); /*El e.preventDefault() es para decirle al evento click que no se realice el comportamiento predeterminado de este enlace, es decir, que el navegador no se vaya a la ruta marcada en el href del enlace.*/
@@ -311,7 +317,7 @@
             <div class="interior" id="num5">
                 <button class="button button3s" onclick="numero('.')">·</button>
                 <button class="button button3s" onclick="calcular()">=</button>
-                <button class="button button3s" id="cienti" onclick="advc()">∿</button>
+                <!-- <button class="button button3s" id="cienti" onclick="advc()">∿</button> -->
             </div>
         </div>
     </div>
