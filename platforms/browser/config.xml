@@ -2,12 +2,13 @@
 <widget id="com.phonegap.roundcalculator" version="1.0.0" xmlns="http://www.w3.org/ns/widgets" xmlns:cdv="http://cordova.apache.org/ns/1.0" xmlns:gap="http://phonegap.com/ns/1.0">
     <name>RoundCalculator</name>
     <description>
-        Calculator for ronud watches.
+        Calculator for round watches.
     </description>
     <author email="josep.pablo@gmail.com" href="http://phonegap.com">
         Can Pixa Team
     </author>
     <content src="index.html" />
     <access origin="*" />
-    <icon src="res/icon.png" />
+    <icon src="res/RoundCalculator.png" />
+    <gap:splash src="res/SplashCalculator.png" />
 </widget>
