@@ -2,11 +2,13 @@
 <widget id="com.phonegap.roundcalculator" version="1.0.0" xmlns="http://www.w3.org/ns/widgets" xmlns:gap="http://phonegap.com/ns/1.0">
     <name>RoundCalculator</name>
     <description>
-        A blank PhoneGap app.
+        Calculator for round watches.
     </description>
-    <author email="support@phonegap.com" href="http://phonegap.com">
-        PhoneGap Team
+    <author email="josep.pablo@gmail.com" href="http://phonegap.com">
+        Can Pixa Team
     </author>
     <content src="index.html" />
     <access origin="*" />
+    <icon src="res/RoundCalculator.png" />
+    <gap:splash src="res/SplashCalculator.png" />
 </widget>

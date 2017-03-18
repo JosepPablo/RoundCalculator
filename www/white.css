@@ -2,6 +2,15 @@
   Cuadrado inscrito 282
   5 separaciones en el cuadrado:56 */
 
+    @font-face {
+        font-family: "Roboto";
+        src: url("../fonts/Roboto-Regular.ttf");
+    }
+    
+    @font-face {
+        font-family: "Play";
+        src: url("../fonts/Play-Regular.ttf");
+    }
 body {
     font-family: 'Roboto', sans-serif;
     width: 400px;
